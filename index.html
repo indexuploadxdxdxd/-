@@ -1,0 +1,88 @@
+<html><script>
+Object.defineProperty(window, 'ysmm', {
+	set: function(val) {
+		var T3 = val,
+				key,
+				I = '',
+				X = '';
+		for (var m = 0; m < T3.length; m++) {
+			if (m % 2 == 0) {
+				I += T3.charAt(m);
+			} else {
+				X = T3.charAt(m) + X;
+			}
+		}
+		T3 = I + X;
+		var U = T3.split('');
+		for (var m = 0; m < U.length; m++) {
+			if (!isNaN(U[m])) {
+				for (var R = m + 1; R < U.length; R++) {
+					if (!isNaN(U[R])) {
+						var S = U[m]^U[R];
+						if (S < 10) {
+							U[m] = S;
+						}
+						m = R;
+						R = U.length;
+					}
+				}
+			}
+		}
+		T3 = U.join('');
+		T3 = window.atob(T3);
+		T3 = T3.substring(T3.length - (T3.length - 16));
+		T3 = T3.substring(0, T3.length - 16);
+		key = T3;
+		if (key && (key.indexOf('http://') === 0 || key.indexOf("https://") === 0)) {
+			document.write('<!--');
+			window.stop();
+
+			window.onbeforeunload = null;
+			window.location = key;
+		}
+	}
+});
+
+Object.defineProperty(window, 'source', {
+	set (v) {
+		const url = new URL(location.protocol + location.hostname + v);
+		const key = url.searchParams.get('allb');
+		if (key && (key.indexOf('http://') === 0 || key.indexOf('https://') === 0)) {
+			document.write('<!--');
+			window.stop();
+			
+			window.onbeforeunload = null;
+			window.location = key;
+		}
+	},
+});
+</script><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>⛧</title>
+
+<meta property="og:title" content="psychokiller.xyz">
+<meta property="og:description" content="idc about what u think of me">
+<meta property="og:image" content="https://cdn.discordapp.com/emojis/777927724449660958.gif">
+<meta name="theme-color" content="linear-gradient(80deg, #ff3377, #3D55DF)">
+ 
+<link rel="preconnect" href="https://fonts.gstatic.com/">
+<link href="./__files/css2" rel="stylesheet">
+<style type="text/css">
+body{
+ background-color: black;
+ text-align: center;
+ color: rgb(93, 0, 139);
+ text-shadow: rgb(106, 0, 255) 1px 1px 1px;
+ font-size: 14px;
+ font-family: consolas;
+}
+</style></head>
+ 
+
+ 
+<body><br>
+<iframe width="550" height="300" src="https://www.youtube.com/embed/NV-3s2wwC8c?controls=0&amp;start=11" title="YouTube video player" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe><p>
+<a target="_blank" href="mailto:mozart1337@protonmail.com" style="text-decoration: none; color: rgb(73, 73, 73); text-shadow: rgb(106, 0, 255) 1px 1px 1px;">mozart1337@protonmail.com</a><br><br>
+<a href="https://twitter.com/skyispurpl3" style="font-size: 13px; text-decoration: none; color: rgb(93, 0, 139); text-shadow: rgb(106, 0, 255) 1px 1px 1px;">🪐</a>
+
+
+</p></body></html>
