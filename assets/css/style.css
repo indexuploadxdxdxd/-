@@ -12,7 +12,7 @@ p,
 }
 
 .bg-image {
-  background-image: url('../img/background.gif');
+  background-image: url('"https://www.youtube.com/embed/oCveByMXd_0?controls=0"');
 
   filter: blur(6px);
   -webkit-filter: blur(6px);
