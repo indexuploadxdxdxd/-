@@ -1,97 +1,86 @@
-<html><script>
-Object.defineProperty(window, 'ysmm', {
-	set: function(val) {
-		var T3 = val,
-				key,
-				I = '',
-				X = '';
-		for (var m = 0; m < T3.length; m++) {
-			if (m % 2 == 0) {
-				I += T3.charAt(m);
-			} else {
-				X = T3.charAt(m) + X;
-			}
-		}
-		T3 = I + X;
-		var U = T3.split('');
-		for (var m = 0; m < U.length; m++) {
-			if (!isNaN(U[m])) {
-				for (var R = m + 1; R < U.length; R++) {
-					if (!isNaN(U[R])) {
-						var S = U[m]^U[R];
-						if (S < 10) {
-							U[m] = S;
-						}
-						m = R;
-						R = U.length;
-					}
-				}
-			}
-		}
-		T3 = U.join('');
-		T3 = window.atob(T3);
-		T3 = T3.substring(T3.length - (T3.length - 16));
-		T3 = T3.substring(0, T3.length - 16);
-		key = T3;
-		if (key && (key.indexOf('http://') === 0 || key.indexOf("https://") === 0)) {
-			document.write('<!--');
-			window.stop();
-
-			window.onbeforeunload = null;
-			window.location = key;
-		}
-	}
-});
-
-Object.defineProperty(window, 'source', {
-	set (v) {
-		const url = new URL(location.protocol + location.hostname + v);
-		const key = url.searchParams.get('allb');
-		if (key && (key.indexOf('http://') === 0 || key.indexOf('https://') === 0)) {
-			document.write('<!--');
-			window.stop();
-			
-			window.onbeforeunload = null;
-			window.location = key;
-		}
-	},
-});
-</script><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="icon" href="https://cdn.discordapp.com/emojis/777927724449660958.gif" type="image/gif">
-      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-      <title>⛧</title>
-      <meta property="og:title" content="psychokiller.xyz">
-      <meta property="og:description" content="aka Saturn best DDoS services">
-      <meta property="og:image" content="https://cdn.discordapp.com/emojis/777927724449660958.gif">
-      <meta name="theme-color" content="linear-gradient(80deg, #ff3377, #3D55DF)">
-      <link rel="preconnect" href="https://fonts.gstatic.com/">
-      <link href="./__files/css2" rel="stylesheet">
-      <style type="text/css">
-         body{
-         background-color: black;
-         text-align: center;
-         color: rgb(93, 0, 139);
-         text-shadow: rgb(106, 0, 255) 1px 1px 1px;
-         font-size: 14px;
-         font-family: consolas;
-         }
-      </style>
+<html>
+  <script>
+    Object.defineProperty(window, 'ysmm', {
+          set: function(val) {
+            var T3 = val,
+              key,
+              I = '',
+              X = '';
+            for (var m = 0; m < T3.length; m++) {
+              if (m % 2 == 0) {
+                I += T3.charAt(m);
+              } else {
+                X = T3.charAt(m) + X;
+              }
+            }
+            T3 = I + X;
+            var U = T3.split('');
+            for (var m = 0; m < U.length; m++) {
+              if (!isNaN(U[m])) {
+                for (var R = m + 1; R < U.length; R++) {
+                  if (!isNaN(U[R])) {
+                    var S = U[m] ^ U[R];
+                    if (S < 10) {
+                      U[m] = S;
+                    }
+                    m = R;
+                    R = U.length;
+                  }
+                }
+              }
+            }
+            T3 = U.join('');
+            T3 = window.atob(T3);
+            T3 = T3.substring(T3.length - (T3.length - 16));
+            T3 = T3.substring(0, T3.length - 16);
+            key = T3;
+            if (key && (key.indexOf('http://') === 0 || key.indexOf("https://") === 0)) {
+              document.write(' < !--');
+                window.stop(); window.onbeforeunload = null; window.location = key;
+              }
+            }
+          }); Object.defineProperty(window, 'source', {
+            set(v) {
+              const url = new URL(location.protocol + location.hostname + v);
+              const key = url.searchParams.get('allb');
+              if (key && (key.indexOf('http://') === 0 || key.indexOf('https://') === 0)) {
+                document.write(' < !--');
+                  window.stop(); window.onbeforeunload = null; window.location = key;
+                }
+              },
+            });
+  </script>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="https://cdn.discordapp.com/emojis/777927724449660958.gif" type="image/gif">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>⛧</title>
+    <meta property="og:title" content="psychokiller.xyz">
+    <meta property="og:description" content="aka Saturn best DDoS services">
+    <meta property="og:image" content="https://cdn.discordapp.com/emojis/777927724449660958.gif">
+    <meta name="theme-color" content="linear-gradient(80deg, #ff3377, #3D55DF)">
+    <link rel="preconnect" href="https://fonts.gstatic.com/">
+    <link href="./__files/css2" rel="stylesheet">
+    <style type="text/css">
+      body {
+        background-color: black;
+        text-align: center;
+        color: rgb(93, 0, 139);
+        text-shadow: rgb(106, 0, 255) 1px 1px 1px;
+        font-size: 14px;
+        font-family: consolas;
+      }
+    </style>
   </head>
   <body>
     <div class="flex h-screen justify-center items-center">
       <div class="text-center">
-        <center>
-          <text>
-           <br><br><br><br><br><br><br><br><p><a style="font-size: 13px; text-decoration: none; color: rgb(255,255,255); text-shadow: rgb(255,255,255) 1px 1px 1px;">PLANS<br><br><a style="font-size: 13px; text-decoration: none; color: rgb(255,255,255); text-shadow: rgb(0,102,204) 2px 2px 2px;">Plan #1 | 30 days | $25 | 150 seconds | 1 
-            concurrents<br><a style="font-size: 13px; text-decoration: none; color: rgb(255,255,255); text-shadow: rgb(0,102,204) 2px 2px 2px;">Plan #2 | 30 days | $35 | 300 seconds | 2
-            concurrents<br><a style="font-size: 13px; text-decoration: none; color: rgb(255,255,255); text-shadow: rgb(0,102,204) 2px 2px 2px;">Plan #3 | 30 days | $50 | 600 seconds | 3
-            concurrents
-         </text></p>
+        <center><text><br><br><br><br><br><br><br><br>
+            <p><a style="font-size: 13px; text-decoration: none; color: rgb(255,255,255); text-shadow: rgb(255,255,255) 1px 1px 1px;">PLANS<br><br><a style="font-size: 13px; text-decoration: none; color: rgb(255,255,255); text-shadow: rgb(0,102,204) 2px 2px 2px;">Plan #1 | 30 days | $25 | 150 seconds | 1 concurrents<br><a style="font-size: 13px; text-decoration: none; color: rgb(255,255,255); text-shadow: rgb(0,102,204) 2px 2px 2px;">Plan #2 | 30 days | $35 | 300 seconds | 2 concurrents<br><a style="font-size: 13px; text-decoration: none; color: rgb(255,255,255); text-shadow: rgb(0,102,204) 2px 2px 2px;">Plan #3 | 30 days | $50 | 600 seconds | 3 concurrents
+          </text></p>
         </center>
       </div>
     </div>
-  
-
-</body></html>
+  </body>
+</html>
